@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>آلاء ناصر عطية | السيرة الذاتية</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="light">
+  <header>
+    <div class="language-switch">
+      <button onclick="setLanguage('ar')">العربية</button>
+      <button onclick="setLanguage('en')">English</button>
+      <button onclick="toggleMode()">🌓</button>
+    </div>
+    <h1 data-lang-ar="مرحبًا بك في موقعي الشخصي" data-lang-en="Welcome to my personal website"></h1>
+  </header>
+
+  <section id="about">
+    <img src="assets/profile.png" alt="صورة شخصية">
+    <p data-lang-ar="أنا آلاء ناصر عطية، من مواليد 23 يوليو 2003، وأسكن في منطقة جنزور الشرقية. خريجة تخصص برمجة حاسوب وطالبة في قسم الاتصالات، كما أحمل شهادة في إدارة الأعمال ودورة مهارات الحاسوب إلى جانب شهادة ICDL الدولية. أتمتع بخبرة في كتابة التقارير الفنية والتنظيمية، وأتميز بالدقة، والقدرة على تنظيم المهام، والعمل ضمن فريق. أطمح إلى الانضمام إلى بيئة عمل احترافية أُسهم فيها بخبرتي التقنية والتنظيمية لتحقيق أهداف المؤسسة وتعزيز كفاءتها الإدارية."
+       data-lang-en="I'm Alaa Nasser Attia, from Janzour Sharqiyya, born on July 23, 2003. I'm a telecommunications student and a computer programming graduate. I hold a Business Administration certificate, a Computer Skills course, and ICDL certification. I have experience in writing technical reports and aspire to develop innovative and smart digital solutions."></p>
+  </section>
+
+  <section id="cv">
+    <h2 data-lang-ar="السيرة الذاتية" data-lang-en="Curriculum Vitae"></h2>
+    <iframe src="assets/cv.pdf" width="100%" height="500px"></iframe>
+    <a class="download" href="assets/cv.pdf" download>📥 تحميل السيرة الذاتية</a>
+  </section>
+
+  <section id="projects">
+    <h2 data-lang-ar="مشاريعي" data-lang-en="My Projects"></h2>
+    <div class="projects-grid">
+      <div class="project">
+        <img src="assets/image/project1.jpg" alt="مشروع الريحانة">
+        <h3>منظومة مركز الريحانة المتجددة</h3>
+        <p>نظام لإدارة العمليات داخل المركز باستخدام تقنيات الويب.</p>
+      </div>
+      <div class="project">
+        <img src="assets/image/project2.png" alt="تطبيق الحالمون الصغار">
+        <h3>تطبيق الحالمون الصغار</h3>
+        <p>تطبيق تعليمي وترفيهي لأطفال الفئات الخاصة باستخدام Flutter.</p>
+      </div>
+      <div class="project">
+        <img src="assets/image/project3.jpg" alt="تطبيق مدرسي للطلاب ">
+        <h3>تطبيق مدرسي </h3>
+        <p>تطبيق يتيح للاهل الاطلاع على اداء ابناهم واستقبال التنبيهات التي تخصهم وارسال الاستفسارات باستخدام Flutter.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 data-lang-ar="مهاراتي" data-lang-en="My Skills"></h2>
+    <ul class="skills-list">
+      <li>💻 برمجة حاسوب</li>
+      <li>📝 كتابة تقارير</li>
+      <li>📊 إدارة أعمال</li>
+      <li>🖥️ مهارات الحاسوب (ICDL)</li>
+      <li>🌐 HTML, CSS, JavaScript</li>
+      <li>📱 Flutter (تطبيقات موبايل)</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2 data-lang-ar="تواصل معي" data-lang-en="Contact Me"></h2>
+    <ul>
+      <li><i class="fas fa-phone"></i> <a href="tel:+218944669589">+218944669589</a></li>
+      <li><i class="fas fa-envelope"></i> <a href="mailto:alaanasserattia@gmail.com">alaanasserattia@gmail.com</a></li>
+      <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/alaanasserattia" target="_blank">LinkedIn</a></li>
+      <li><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/alaanasserattia" target="_blank">Facebook</a></li>
+      <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/218944669589" target="_blank">WhatsApp</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 آلاء ناصر عطية. جميع الحقوق محفوظة.</p>
+  </footer>
+</body>
+</html>

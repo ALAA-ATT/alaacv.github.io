@@ -1,0 +1,152 @@
+body {
+  font-family: 'Tajawal', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: var(--background);
+  color: var(--text);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+:root {
+  --background: #908A7C;
+  --text: #222;
+  --primary: hsl(28, 34%, 55%);
+  --secondary: #90786a;
+  --accent: hsl(57, 36%, 68%);
+  --neutral-light: lab(92.78% 1.67 2.77);
+  --neutral-dark: hsl(23, 42%, 76%);
+}
+
+body.light {
+  --background: #CAB6AB;
+  --text: #222;
+}
+
+body.dark {
+  --background: hwb(19 22% 71%);
+  --text: #f0f0f0;
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+  background-color: var(--primary);
+  color: white;
+}
+
+.language-switch button {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  background-color: var(--accent);
+  color: var(--text);
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section#about img {
+  max-width: 120px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project {
+  margin-bottom: 30px;
+  background-color: var(--neutral-light);
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.project img {
+  max-width: 250px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.skills-list li {
+  background-color: var(--neutral-light);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+ul li i {
+  margin-left: 10px;
+  color: var(--accent);
+}
+
+#contact ul li {
+  background-color: var(--neutral-light);
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 300px;
+}
+
+.download {
+  background-color: var(--accent);
+  color: var(--text);
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--neutral-dark);
+  color: var(--neutral-light);
+  font-size: 0.9em;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.2em;
+  }
+  .language-switch button {
+    padding: 8px;
+    font-size: 0.9em;
+  }
+  section {
+    padding: 20px 10px;
+  }
+  .project img {
+    max-width: 200px;
+  }
+}
